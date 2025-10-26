@@ -33,12 +33,6 @@
 
         spaceBetween: 15,
         slidesPerView: 1.5,
-
-        pagination: {
-            el: '.swiper-padination',
-            type: 'fraction',
-        },
-
         navigation: {
             nextEl: '.img__strelki1',
             prevEl: '.img__strelki2',
