@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'MonumentExtended-Regular';
+	src: url('../fonts/monumentextended-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/monumentextended-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/monumentextended-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/monumentextended-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/monumentextended-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/monumentextended-regular.svg#monumentextended-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}

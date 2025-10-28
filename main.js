@@ -29,24 +29,12 @@
 // goToSlide(0)
 
 
-    new Swiper('.testimoials__inner', {
+const swiper = new Swiper('.testimonials__slides-viewport', {
+    
+    slidesPerView:4,
 
-        spaceBetween: 15,
-        slidesPerView: 1.5,
-        navigation: {
-            nextEl: '.img__strelki1',
-            prevEl: '.img__strelki2',
-        },
-
-        breakpoints: {
-            601: {
-                slidesPerView: 3,
-            },
-            801: {
-                spaceBetween: 32,
-            },
-            1101: {
-                slidesPerView: 4,
-            }
-        }
-    });
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+});
