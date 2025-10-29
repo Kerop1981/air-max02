@@ -1,33 +1,3 @@
-// const slides = document.querySelector('.testimoials__iner');
-
-// const slideCount = document.querySelector('.testimonials__slide').length;
-
-// const prevButton = document.querySelector('.strelka1');
-// const nextButton = document.querySelector('.strelka2');
-
-// let currentIndex = 0;
-
-// function goToSlide(index){
-//     if (index < 0){
-//         index = slideCount - 1
-//     } else if (index >= slideCount) {
-//         index = 0;
-//     }
-
-//     currentIndex = index;
-//     slides.computedStyleMap.transform = `translateX(${-index * 100}%)`
-// }
-
-// prevButton.addEventListener('click', () => {
-//     goToSlide(currentIndex - 1);
-// });
-
-// nextButton.addEventListener('click', () => {
-//     goToSlide(currentIndex + 1)
-// })
-
-// goToSlide(0)
-
 
 const swiper = new Swiper('.testimonials__slides-viewport', {
     
@@ -37,4 +7,59 @@ const swiper = new Swiper('.testimonials__slides-viewport', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
+});
+
+
+// ====================================================
+document.addEventListener('DOMContentLoaded', function() {
+
+    var mixer = mixitup('.kross__container', {
+        selectors: {
+            target: '.testimonials__slide'
+        },
+        animation: {
+            duration: 300
+        }
+    });
+
+    var mixer2 = mixitup('.kross__container2', {
+        selectors: {
+            target: '.testimonials__slide'
+        },
+        animation: {
+            duration: 300
+        }
+    });
+
+    const filterBtn = document.querySelectorAll('.filter-button')[0]; 
+    const sortBtn   = document.querySelectorAll('.filter-button')[1]; 
+
+    let currentFilter = 'all';
+    filterBtn.addEventListener('click', () => {
+        if (currentFilter === 'all') {
+            mixer.filter('.brand-nike');
+            mixer2.filter('.brand-nike');
+            currentFilter = 'nike';
+        } else if (currentFilter === 'nike') {
+            mixer.filter('.brand-newbalance');
+            mixer2.filter('.brand-newbalance');
+            currentFilter = 'newbalance';
+        } else {
+            mixer.filter('all');
+            mixer2.filter('all');
+            currentFilter = 'all';
+        }
+    });
+
+    let sortAsc = true;
+    sortBtn.addEventListener('click', () => {
+        if (sortAsc) {
+            mixer.sort('price:asc');
+            mixer2.sort('price:asc');
+        } else {
+            mixer.sort('price:desc');
+            mixer2.sort('price:desc');
+        }
+        sortAsc = !sortAsc;
+    });
 });
