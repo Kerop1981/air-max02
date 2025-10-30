@@ -520,11 +520,52 @@
     gap: 50px;
     padding: 24px 0;
     color: var(--general-bd);
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    
 }
 .text {
-    padding: 10px 0 ;
 }
 .stolb2 {
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .testimonials__slides-viewport {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .swiper {
+        padding: 0 10px;
+    }
+    .testimonials__slide {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials__text {
+        font-size: 24px;
+    }
+    .testimoials__krossovki {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimoials__krossovki {
+        width: 100%;
+    }
+    .testimoials__krossovki-img {
+        padding: 20px;
+    }
+    .testimonials__text {
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
