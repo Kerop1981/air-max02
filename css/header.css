@@ -1,0 +1,140 @@
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 0;
+}
+
+.nav__sear{
+    position: absolute;
+    right: 0;
+}
+
+
+.nav__list {
+    display: flex;
+    gap: 4vh 40px;
+    margin: 0 auto;
+}
+
+.nav__item{
+    display: contents
+}
+.nav__link{
+    font-family: "MonumentExtended-Regular", sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+
+.img{
+    display: flex;
+    align-items: end;
+    width: 200px;
+  
+    justify-content: center;
+    align-items: center;
+}
+
+.img1{
+    display: flex;
+    align-items: end;
+    width: 200px;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__container{
+    display: flex;
+    align-items: end;
+
+}
+.img-poisk{
+    width: 20px;
+}
+.img-poisk2 {
+    width: 1.3px;
+}
+/* ================================ */
+
+.photo__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #FFB800 0%, #DE343D 100%);
+    max-height: 750px;
+    position: relative
+}
+
+.photo__conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+.photo__nadpis {
+    position: absolute;
+    font-size: 218px;
+    opacity: 0.2;
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+}
+.text__air {
+    font-family: "MonumentExtended-Regular", sans-serif;
+    font-weight: 500;
+}
+.photo__set  {
+    position: absolute;
+    display: flex;
+    width: 455px;
+    height: 300px;
+
+}
+
+
+.photo__img img {
+    width: 400px;
+    height: 400px
+}
+
+
+.photo__img {
+    z-index: 4;
+}
+
+.input{
+    display: contents;
+}
+/* ======================================== */
+
+.button__buy{
+
+}
+
+.button {
+    position: relative;
+    display: flex;
+    top: 170px;
+    left: 200px;
+    border: 2px solid var(--general-text);
+    color: #ffffff;
+    padding: 10px 15px;
+}
