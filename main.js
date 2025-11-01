@@ -1,3 +1,29 @@
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const header = document.querySelector('.photo__header');
+
+// Фоны для каждого слайда
+const backgrounds = [
+    'linear-gradient(135deg, #FFB800 0%, #DE343D 100%)',
+    'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)',
+    'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
+    'linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)',
+    'linear-gradient(135deg, #ff512f 0%, #dd2476 100%)',
+    'linear-gradient(135deg, #1c92d2 0%, #f2fcfe 100%)'
+];
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+        dots[i].classList.toggle('active', i === index);
+    });
+
+    header.style.background = backgrounds[index];
+}
+
+// Показываем первый слайд
+showSlide(0);
+
 
 const swiper = new Swiper('.testimonials__slides-viewport', {
     slidesPerView: 4,
