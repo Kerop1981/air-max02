@@ -384,7 +384,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 24px 0;
+    padding: px 0;
     color: var(--general-bd);
     
 }
@@ -393,4 +393,131 @@
 .stolb2 {
 }
 
+/* До 1200px */
+@media (max-width: 1200px) {
+    .photo__set img {
+        max-width: 100%;
+        height: auto;
+    }
 
+    .testimonials__slides-viewport {
+        padding: 0 20px;
+    }
+
+    .testimonials__krossovki {
+        max-width: 250px;
+    }
+
+    .button_all {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* До 1100px */
+@media (max-width: 1100px) {
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .photo__nadpis {
+        font-size: 32px;
+    }
+
+    .testimonials__krossovki-name {
+        font-size: 14px;
+    }
+}
+
+/* До 900px */
+@media (max-width: 900px) {
+    .nav {
+        position: fixed;
+        inset: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        z-index: 100;
+    }
+
+    .body--opened-menu .nav {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slides {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__krossovki {
+        margin-bottom: 20px;
+    }
+}
+
+/* До 800px */
+@media (max-width: 800px) {
+    .photo__nadpis {
+        font-size: 28px;
+    }
+
+    .slides img {
+        max-width: 80%;
+    }
+
+    .testimonials__slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials__krossovki-rub,
+    .testimonials__krossovki-sizes {
+        font-size: 12px;
+    }
+
+    .brend__container img {
+        height: 30px;
+        margin: 0 5px;
+    }
+}
+
+/* До 450px */
+@media (max-width: 450px) {
+    .nav__link input {
+        display: none;
+    }
+
+    .photo__nadpis {
+        font-size: 22px;
+    }
+
+    .slides img {
+        max-width: 100%;
+    }
+
+    .testimonials__slide {
+        padding: 20px 5px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .brend__container img {
+        height: 25px;
+        margin: 0 3px;
+    }
+}
