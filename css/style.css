@@ -581,11 +581,9 @@
         font-size: 4vw;
     }
 
-    .kross__container{
-        flex-direction: column;
-    }
-    .kross__container2{
-        flex-direction: column;
+    .seller__container{
+       
+        grid-template-columns: repeat(2, 238px)
     }
 
     .footer__container{
@@ -601,7 +599,9 @@ display: none;
 .img__span3::before{
     display: none;
 }
-
+.filter-button{
+        padding: 8px ;
+    }
 }
 
 /* До 450px */
@@ -648,10 +648,11 @@ display: none;
     }
     .user__icons img{ }
 
-     .kross__container{
+     .seller__container{
         flex-direction: column;
     }
-    .kross__container2{
-        flex-direction: column;
+   
+    .filter-button{
+        padding: 6px ;
     }
 }
