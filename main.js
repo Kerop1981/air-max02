@@ -24,9 +24,33 @@ function showSlide(index) {
 // Показываем первый слайд
 showSlide(0);
 
+//Burger-Menu
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('overlay');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  if (mobileMenu.style.display === 'block') {
+    mobileMenu.style.display = 'none';
+    overlay.style.display = 'none';
+  } else {
+    mobileMenu.style.display = 'block';
+    overlay.style.display = 'block';
+  }
+});
+
+overlay.addEventListener('click', () => {
+  burger.classList.remove('active');
+  mobileMenu.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+
+
 
 const swiper = new Swiper('.testimonials__slides-viewport', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 10,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -34,7 +58,7 @@ const swiper = new Swiper('.testimonials__slides-viewport', {
     },
     breakpoints: {
         1200: {
-            slidesPerView: 4,
+            slidesPerView: 3,
         },
         992: {
             slidesPerView: 3,
@@ -102,27 +126,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-window.addEventListener("resize", AutoScale); //Масштабируем страницу при растягивании окна
-
-AutoScale(); //Масштабируем страницу после загрузки
-
-function AutoScale()
-{
-    let width = window.innerWidth; //Ширина окна
-    //Если вы хотите проверять по размеру экрана, то вам нужно свойство window.screen.width
-
-    if(width > 1280)
-    {
-   	 ChangeScale("big");
-    }
-    else if(width <= 1280 && width > 720)
-    {
-   	 ChangeScale("normal");
-    }
-    else if(width < 720)
-    {
-   	 ChangeScale("small");
-    }
-}
 

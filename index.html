@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,356 +14,354 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
+                <button class="burger" id="burger" aria-label="Открыть меню" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#"><span> ALL </span></a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">FOOTWEAR</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">APPAREL</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">BASKETBALL</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">SLIDES</a>
-                        </li>
-                        </ul>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#">
-                            <div class="img__container">
-                            <img  class="img__poisk" src="krosovki/posk/Vector.svg" alt="лупа поиск">
-                            <img  class="img__poisk2" src="krosovki/posk/Vector2.svg" alt="">
-                            </div>
-                                <input class="input" type="text">SEARCH</input>
-                            </a>
-                        </li>
+                    <li class="nav__item"><a class="nav__link" href="#">ALL</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">FOOTWEAR</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">APPAREL</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">BASKETBALL</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">SLIDES</a></li>
+                    </ul>
                 </nav>
+
+                <!-- Мобильное меню -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <ul>
+                    <li><a href="#">ALL</a></li>
+                    <li><a href="#">FOOTWEAR</a></li>
+                    <li><a href="#">APPAREL</a></li>
+                    <li><a href="#">BASKETBALL</a></li>
+                    <li><a href="#">SLIDES</a></li>
+                    </ul>
+                </div>
+
+                <div class="overlay" id="overlay"></div>
             </div>
-        <div class="photo__header slider">
-    <div class="slider_container">
-        <div class="dots">
-            <div class="dot" onclick="showSlide(0)"></div>
-            <div class="dot" onclick="showSlide(1)"></div>
-            <div class="dot" onclick="showSlide(2)"></div>
-            <div class="dot" onclick="showSlide(3)"></div>
-            <div class="dot" onclick="showSlide(4)"></div>
-        </div>
+                        <div class="photo__header slider">
+                    <div class="slider_container">
+                    <div class="dots">
+                        <div class="dot" onclick="showSlide(0)"></div>
+                        <div class="dot" onclick="showSlide(1)"></div>
+                        <div class="dot" onclick="showSlide(2)"></div>
+                        <div class="dot" onclick="showSlide(3)"></div>
+                        <div class="dot" onclick="showSlide(4)"></div>
+                    </div>
 
-        <div class="photo__nadpis">
-            <p class="text__air">AIR MAX</p>
-        </div>
+                    <div class="photo__nadpis">
+                        <p class="text__air">AIR MAX</p>
+                    </div>
 
-
-        <div class="photo__set">
+            <div class="photo__set">
             <img src="krosovki/Frame 2.png" alt="фон">
-        </div>
+            </div>
 
         <div class="slides">
-        <!-- Слайды с кроссовками -->
-        <div class="photo__img slide">
-            <img src="krosovki/pngwing 1.png" alt="Nike Air Max 1">
+            <!-- Слайды с кроссовками -->
+            <div class="photo__img slide">
+                <img src="krosovki/pngwing 1.png" alt="Nike Air Max 1">
+            </div>
+            <div class="photo__img slide">
+                <img src="krosovki/image 89.png" alt="Nike Air Max 2">
+            </div>
+            <div class="photo__img slide">
+                <img src="krosovki/image 99.png" alt="Nike Air Max 3">
+            </div>
+            <div class="photo__img slide">
+                <img src="krosovki/image 91.png" alt="Nike Air Max 4">
+            </div>
+            <div class="photo__img slide">
+                <img src="krosovki/image 93.png" alt="Nike Air Max 5">
+            </div>
         </div>
-        <div class="photo__img slide">
-            <img src="krosovki/image 89.png" alt="Nike Air Max 2">
-        </div>
-        <div class="photo__img slide">
-            <img src="krosovki/image 99.png" alt="Nike Air Max 3">
-        </div>
-        <div class="photo__img slide">
-            <img src="krosovki/image 91.png" alt="Nike Air Max 4">
-        </div>
-        <div class="photo__img slide">
-            <img src="krosovki/image 93.png" alt="Nike Air Max 5">
-        </div>
-</div>
-        <!-- Кнопка -->
-        <button class="button">BUY NOW</button>
-    </div>
-</div>
+            <button class="button">BUY NOW</button> 
         </header>
-    </div>
-    <main class="main">
-    <div class="container">
-        <div class="testimoials__iner">
-        <div class="testimonials__info">
-            <p class="testimonials__text">Top Seller</p>
-        </div>
-            <div class="img__strelki2 swiper-button-prev">
-                <button  class="strelka2">
-                    <img src="krosovki/Vector (2).svg" style="background-color: #ffffff;" alt="стрелка влево">
-                </button> 
-            </div>
-        <!-- Контейнер для слайдов -->
-        <div class="testimonials__slides-viewport swiper">
-            
-            <div class="swiper-wrapper">
+    
+            <main class="main">
+            <div class="container">
+                <div class="testimoials__iner">
+                <div class="testimonials__info">
+                    <p class="testimonials__text">Top Seller</p>
+                </div>
+                    <div class="img__strelki2 swiper-button-prev">
+                        <button  class="strelka2">
+                            <img src="krosovki/Vector (2).svg" style="background-color: #ffffff;" alt="стрелка влево">
+                        </button> 
+                    </div>
+                <!-- Контейнер для слайдов -->
+                <div class="testimonials__slides-viewport swiper">
+                    
+                    <div class="swiper-wrapper">
 
-            <div class="testimonials__slide swiper-slide">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img1" src="krosovki/image 99.png" alt="красный кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">Nike</div>
-                <div class="testimoials__krossovki-name">Air Force 1 Orche</div>
-                <div class="testimoials__krossovki-rub">19.985р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 8-10</div>
-                </div>
-            </div>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img1" src="krosovki/image 99.png" alt="красный кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">Nike</div>
+                        <div class="testimoials__krossovki-name">Air Force 1 Orche</div>
+                        <div class="testimoials__krossovki-rub">19.985р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 8-10</div>
+                        </div>
+                    </div>
 
-            <div class="testimonials__slide swiper-slide">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 91.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">Nike</div>
-                <div class="testimoials__krossovki-name">Air Force Panda</div>
-                <div class="testimoials__krossovki-rub">19.655р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 6-10</div>
-                </div>
-            </div>
-            <div class="gallery__pagination swiper-pagination"></div>
-            <div class="testimonials__slide swiper-slide">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 89.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">Nike</div>
-                <div class="testimoials__krossovki-name">Air Force 1 '07</div>
-                <div class="testimoials__krossovki-rub">17.750р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 9-12</div>
-                </div>
-            </div>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 91.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">Nike</div>
+                        <div class="testimoials__krossovki-name">Air Force Panda</div>
+                        <div class="testimoials__krossovki-rub">19.655р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 6-10</div>
+                        </div>
+                    </div>
+                    <div class="gallery__pagination swiper-pagination"></div>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 89.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">Nike</div>
+                        <div class="testimoials__krossovki-name">Air Force 1 '07</div>
+                        <div class="testimoials__krossovki-rub">17.750р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 9-12</div>
+                        </div>
+                    </div>
 
-            <div class="testimonials__slide swiper-slide">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 93.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">New Balance</div>
-                <div class="testimoials__krossovki-name">327' Munsell White</div>
-                <div class="testimoials__krossovki-rub">11.999р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Правая стрелка -->
-        <div class="img__strelki1 swiper-button-next">
-            <button hclass="strelka1">
-                <img src="krosovki/Vector (1).svg" style="background-color: #ffffff;" alt="стрелка вправо">
-            </button>
-        </div>
-        </div>
-       <div class="click_see">
-         <a class="button_all" href="">SEE ALL</a>
-         </div>
-    </div>
-
-    <div class="main__global-container">
-        <div class="global__text">
-            <div class="text__img">
-                <p>Not <span class="img__span1"><img src="krosovki/Asweetrain_Shoes_White_FY8783_01_standard 1.png" alt=""></span>
-                    Just for <span class="img__span2"><img src="krosovki/image 100 (1).png" alt=""> </p></span>
-                    <p>Street Anymore <span class="img__span3"><img src="krosovki/Rectangle 98.png" alt=""></p></span>
-            </div>
-        </div>
-    </div>
-    <div class="brend__global">
-        <div class="brend__container">
-            <img style="height: 35px;" src="krosovki/icons/image 95.svg" alt=""><img style="height: 45px;" src="krosovki/icons/image 96.svg" alt="">
-            <img style="height: 45px;" src="krosovki/icons/image 97.svg" alt=""><img style="height: 45px;" src="krosovki/icons/image 98.svg" alt="">
-        </div>
-    </div>
-
-    <div class="marquee">
-        <div class="track">
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-            <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
-        </div>
-    </div>
-
-    <div class="user">
-        <div class="user__container">
-            <div class="user">
-                <img src="krosovki/user-photo/Rectangle 1141.png" alt="">
-            </div>
-            <div class="user__text">
-                <p style="color: #FFF;">AIR MAX</p>
-            </div>
-            <div class="user__icons">
-                <img src="krosovki/icons/Vector.svg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <div class="filter">
-        <div class="filter__container">
-                <div class="text__Top">
-                    <p>Top Seller</p>
-                </div>
-
-                <div class="filter__iconki">
-                    <div class="iconka">
-                    <button class="filter-button">
-                        <img src="krosovki/icons/Vector (7).svg" alt="">
-                        FILTRS
-                    </button>
-                </div>
-                <div>
-                    <button class="filter-button">
-                        <img src="krosovki/icons/Vector (6).svg" alt="">
-                        SORT BY
-                    </button>
-                </div>
-                <div class="filter__iconki2">
-                    <button class="filter-button">
-                        <img src="krosovki/icons/Vector (4).svg" alt="">
-                    </button>
-                
-                    <div>
-                        <button class="filter-button">
-                            <img src="krosovki/icons/Vector (3).svg" style="width: 18px; height: 16px;" alt="">
-                        </button>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 93.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">New Balance</div>
+                        <div class="testimoials__krossovki-name">327' Munsell White</div>
+                        <div class="testimoials__krossovki-rub">11.999р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </div>              
-        </div>
-    </div>
+                <!-- Правая стрелка -->
+                <div class="img__strelki1 swiper-button-next">
+                    <button hclass="strelka1">
+                        <img src="krosovki/Vector (1).svg" style="background-color: #ffffff;" alt="стрелка вправо">
+                    </button>
+                </div>
+                </div>
+            <div class="click_see">
+                <a class="button_all" href="">SEE ALL</a>
+                </div>
+            </div>
+
+            <div class="main__global-container">
+                <div class="global__text">
+                    <div class="text__img">
+                        <p>Not <span class="img__span1"><img src="krosovki/Asweetrain_Shoes_White_FY8783_01_standard 1.png" alt=""></span>
+                            Just for <span class="img__span2"><img src="krosovki/image 100 (1).png" alt=""> </p></span>
+                            <p>Street Anymore <span class="img__span3"><img src="krosovki/Rectangle 98.png" alt=""></p></span>
+                    </div>
+                </div>
+            </div>
+            <div class="brend__global">
+                <div class="brend__container">
+                    <img style="height: 35px;" src="krosovki/icons/image 95.svg" alt=""><img style="height: 45px;" src="krosovki/icons/image 96.svg" alt="">
+                    <img style="height: 45px;" src="krosovki/icons/image 97.svg" alt=""><img style="height: 45px;" src="krosovki/icons/image 98.svg" alt="">
+                </div>
+            </div>
+
+            <div class="marquee">
+                <div class="track">
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                    <div class="item"><img src="krosovki/icons/image 95.svg" alt="">JUST DO IT</div>
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="user__container">
+                    <div class="user">
+                        <img src="krosovki/user-photo/Rectangle 1141.png" alt="">
+                    </div>
+                    <div class="user__text">
+                        <p style="color: #FFF;">AIR MAX</p>
+                    </div>
+                    <div class="user__icons">
+                        <img src="krosovki/icons/Vector.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <div class="filter__container">
+                        <div class="text__Top">
+                            <p>Top Seller</p>
+                        </div>
+
+                        <div class="filter__iconki">
+                            <div class="iconka">
+                            <button class="filter-button">
+                                <img src="krosovki/icons/Vector (7).svg" alt="">
+                                FILTRS
+                            </button>
+                        </div>
+                        <div>
+                            <button class="filter-button">
+                                <img src="krosovki/icons/Vector (6).svg" alt="">
+                                SORT BY
+                            </button>
+                        </div>
+                        <div class="filter__iconki2">
+                            <button class="filter-button">
+                                <img src="krosovki/icons/Vector (4).svg" alt="">
+                            </button>
+                        
+                            <div>
+                                <button class="filter-button">
+                                    <img src="krosovki/icons/Vector (3).svg" style="width: 18px; height: 16px;" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
 
 
-    
-   
-        <div class="table__kross">
+            
         
-            <div class="kross__container">
+                <div class="table__kross">
+                
+                    <div class="kross__container">
 
-                <div class="testimonials__slide mix brand-nike" data-price="19985">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img1" src="krosovki/image 99.png" alt="красный кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">Nike</div>
-                <div class="testimoials__krossovki-name">Air Force 1 Orche</div>
-                <div class="testimoials__krossovki-rub">19.985р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 8-10</div>
-                </div>
-            </div>
+                        <div class="testimonials__slide mix brand-nike" data-price="19985">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img1" src="krosovki/image 99.png" alt="красный кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">Nike</div>
+                        <div class="testimoials__krossovki-name">Air Force 1 Orche</div>
+                        <div class="testimoials__krossovki-rub">19.985р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 8-10</div>
+                        </div>
+                    </div>
 
-            <div class="testimonials__slide swiper-slide  mix brand-nike" data-price="19985" >
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 91.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">Nike</div>
-                <div class="testimoials__krossovki-name">Air Force Panda</div>
-                <div class="testimoials__krossovki-rub">19.985р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 6-10</div>
-                </div>
-            </div>
-            <div class="gallery__pagination"></div>
-            <div class="testimonials__slide swiper-slide">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 89.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">Nike</div>
-                <div class="testimoials__krossovki-name">Air Force 1 '07</div>
-                <div class="testimoials__krossovki-rub">17.750р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 9-12</div>
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
-</div>
-    <div class="table__kross2">
-        <div class="kross__container2">
-            <div class="testimonials__slide mix brand-newbalanse" data-price="11999">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 93.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">New Balance</div>
-                <div class="testimoials__krossovki-name">327' Munsell White</div>
-                <div class="testimoials__krossovki-rub">11.999р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
-                </div>
-            </div>
-
-
-                <div class="testimonials__slide mix brand-newbalanse" data-price="11999">
-                <div class="testimoials__krossovki">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 93.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">New Balance</div>
-                <div class="testimoials__krossovki-name">327' Munsell White</div>
-                <div class="testimoials__krossovki-rub">11.999р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
-                </div>
-            </div>
-
-                <div class="testimonials__slide mix brand-newbalanse" data-price="11999">
-                <div class="testimoials__krossovki ">
-                <div class="testimoials__krossovki-img">
-                    <img class="img" src="krosovki/image 93.png" alt="кроссовок">
-                </div>
-                <div class="testimonials__krossovki-brend">New Balance</div>
-                <div class="testimoials__krossovki-name">327' Munsell White</div>
-                <div class="testimoials__krossovki-rub">11.999р</div>
-                <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
-                </div>
-        </div>
-    </div>
-    </div>
-    <div class="click_see">
-         <a class="button_all" href="">SEE ALL</a>
-    </div>
-    </main>
-    <footer>
-        <div class="footer__container">
-            <div class="stolb1">
-                <ul>
-                    <li class="text1">Company</li>
-                    <li class="text1">About</li>
-                    <li class="text1">Careers</li>
-                    <li class="text1">Mobile</li>
-
-                </ul>
-            </div>
-
-            <div class="stolb2">
-                <ul>
-                    <li class="text1">Contact</li>
-                    <li class="text1">Help/FAQ</li>
-                    <li class="text1">Press</li>
-                    <li class="text1">Affilates</li>
-
-                </ul>
-            </div>
-
-
-            <div class="stolb3">
-                <ul>
-                    <li class="text1">More</li>
-                    <li class="text1">Airlinefees</li>
-                    <li class="text1">Airline</li>
-                    <li class="text1">Low fare tips</li>
-                </ul>
+                    <div class="testimonials__slide swiper-slide  mix brand-nike" data-price="19985" >
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 91.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">Nike</div>
+                        <div class="testimoials__krossovki-name">Air Force Panda</div>
+                        <div class="testimoials__krossovki-rub">19.985р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 6-10</div>
+                        </div>
+                    </div>
+                    <div class="gallery__pagination"></div>
+                    <div class="testimonials__slide swiper-slide">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 89.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">Nike</div>
+                        <div class="testimoials__krossovki-name">Air Force 1 '07</div>
+                        <div class="testimoials__krossovki-rub">17.750р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 9-12</div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
             </div>
         </div>
-    </footer>
+            <div class="table__kross2">
+                <div class="kross__container2">
+                    <div class="testimonials__slide mix brand-newbalanse" data-price="11999">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 93.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">New Balance</div>
+                        <div class="testimoials__krossovki-name">327' Munsell White</div>
+                        <div class="testimoials__krossovki-rub">11.999р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
+                        </div>
+                    </div>
+
+
+                        <div class="testimonials__slide mix brand-newbalanse" data-price="11999">
+                        <div class="testimoials__krossovki">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 93.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">New Balance</div>
+                        <div class="testimoials__krossovki-name">327' Munsell White</div>
+                        <div class="testimoials__krossovki-rub">11.999р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
+                        </div>
+                    </div>
+
+                        <div class="testimonials__slide mix brand-newbalanse" data-price="11999">
+                        <div class="testimoials__krossovki ">
+                        <div class="testimoials__krossovki-img">
+                            <img class="img" src="krosovki/image 93.png" alt="кроссовок">
+                        </div>
+                        <div class="testimonials__krossovki-brend">New Balance</div>
+                        <div class="testimoials__krossovki-name">327' Munsell White</div>
+                        <div class="testimoials__krossovki-rub">11.999р</div>
+                        <div class="testimoials__krossovki-sizes">Sizes: 7-11</div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="click_see">
+                <a class="button_all" href="">SEE ALL</a>
+            </div>
+            </main>
+            <footer>
+                <div class="footer__container">
+                    <div class="stolb1">
+                        <ul>
+                            <li class="text1">Company</li>
+                            <li class="text1">About</li>
+                            <li class="text1">Careers</li>
+                            <li class="text1">Mobile</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="stolb2">
+                        <ul>
+                            <li class="text1">Contact</li>
+                            <li class="text1">Help/FAQ</li>
+                            <li class="text1">Press</li>
+                            <li class="text1">Affilates</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="stolb3">
+                        <ul>
+                            <li class="text1">More</li>
+                            <li class="text1">Airlinefees</li>
+                            <li class="text1">Airline</li>
+                            <li class="text1">Low fare tips</li>
+                        </ul>
+                    </div>
+                </div>
+                </footer>
+            </div>
+        </div>
+        
     <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="main.js"></script>

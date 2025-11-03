@@ -2,6 +2,7 @@
 @import "header.css";
 @import "reset.css";
 @import "fonts.css";
+@import "burger.css";
 /* ============================================== */
 
 .testimonials__text{
@@ -42,7 +43,12 @@
 }
 
 .swiper-slide {
-
+    display: block;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    width: 100%;
 }
 
 .testimoials__krossovki {
@@ -395,9 +401,10 @@
 
 /* До 1200px */
 @media (max-width: 1200px) {
-    .photo__set img {
+    .photo__set  .photo__header img {
         max-width: 100%;
         height: auto;
+        
     }
 
     .testimonials__slides-viewport {
@@ -412,6 +419,10 @@
         font-size: 14px;
         padding: 10px 20px;
     }
+
+  .photo__nadpis {
+        font-size: 16vw;
+    }
 }
 
 /* До 1100px */
@@ -422,11 +433,14 @@
     }
 
     .photo__nadpis {
-        font-size: 32px;
+        font-size: 16vw;
     }
 
     .testimonials__krossovki-name {
         font-size: 14px;
+    }
+     .photo__set {
+        
     }
 }
 
@@ -465,16 +479,19 @@
     .testimonials__krossovki {
         margin-bottom: 20px;
     }
+
+    .burger { display: flex;}
+    .nav__list { display: none; }
 }
 
 /* До 800px */
 @media (max-width: 800px) {
     .photo__nadpis {
-        font-size: 28px;
+        font-size: 16vw;
     }
 
     .slides img {
-        max-width: 80%;
+        width: 70vw;
     }
 
     .testimonials__slide {
@@ -491,6 +508,9 @@
         height: 30px;
         margin: 0 5px;
     }
+
+    
+   
 }
 
 /* До 450px */
@@ -500,24 +520,25 @@
     }
 
     .photo__nadpis {
-        font-size: 22px;
+        font-size: 16vw;
     }
 
-    .slides img {
-        max-width: 100%;
-    }
+
 
     .testimonials__slide {
         padding: 20px 5px;
     }
 
     .button {
-        width: 100%;
         font-size: 14px;
     }
 
     .brend__container img {
         height: 25px;
         margin: 0 3px;
+    }
+     .photo__set img {
+        width: 75vw;
+        height: 75vw;
     }
 }
