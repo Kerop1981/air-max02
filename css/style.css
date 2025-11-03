@@ -350,12 +350,13 @@
     padding: 50px 0 0 0;
 }
 .seller__container{
-    display: flex;
+    display: grid;
     align-items: center;
     flex-wrap: wrap;
     gap: 3vw;
     padding: 32px;
     justify-content: center;
+    grid-template-columns: repeat(3, 350px)
 
 }
 
