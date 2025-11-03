@@ -81,7 +81,10 @@
     font-weight: 400;
 }
 
-
+ .testimoials__krossovki-img {
+    display: flex;
+    justify-content: center;
+}
 
 .testimoials__iner {
     position: relative;
@@ -423,6 +426,25 @@
   .photo__nadpis {
         font-size: 16vw;
     }
+
+    .text__img p{
+        font-size: 6vw;
+    }
+
+     .text__img img{}
+
+    .text__img span {}
+
+    .user img{
+     width: 98vw;
+    }
+    
+    .user__text p {
+        font-size: 15vw;
+    }
+    .user__icons img{
+        width: 45vw;
+    }
 }
 
 /* До 1100px */
@@ -442,6 +464,22 @@
      .photo__set {
         
     }
+       .text__img p{
+        font-size: 6vw;
+    }
+
+     .text__img img{}
+
+    .text__img span {}
+
+      .user img{
+        
+    }
+    
+    .user__text p {
+        font-size: 15vw;
+    }
+    .user__icons img{ }
 }
 
 /* До 900px */
@@ -482,6 +520,23 @@
 
     .burger { display: flex;}
     .nav__list { display: none; }
+
+       .text__img p{
+        font-size: 5vw;
+    }
+
+     .text__img img{}
+
+    .text__img span {}
+
+      .user img{
+    
+    }
+    
+    .user__text p {
+        font-size: 15vw;
+    }
+    .user__icons img{ }
 }
 
 /* До 800px */
@@ -509,8 +564,33 @@
         margin: 0 5px;
     }
 
+       .text__img p{
+        font-size: 4vw;
+    }
+
+     .text__img img{}
+
+    .text__img span {}
+
+      .user img{
+      
+    }
     
+    .user__text p {
+        font-size: 15vw;
+    }
+    .user__icons img{ }
    
+    .text__Top p{
+        font-size: 4vw;
+    }
+
+    .kross__container{
+        flex-direction: column;
+    }
+    .kross__container2{
+        flex-direction: column;
+    }
 }
 
 /* До 450px */
@@ -540,5 +620,27 @@
      .photo__set img {
         width: 75vw;
         height: 75vw;
+    }
+       .text__img p {
+        font-size: 3vw;
+    }
+
+    .text__img img{}
+    .text__img span {}
+
+      .user img{
+        
+    }
+    
+    .user__text p {
+        font-size: 15vw;
+    }
+    .user__icons img{ }
+
+     .kross__container{
+        flex-direction: column;
+    }
+    .kross__container2{
+        flex-direction: column;
     }
 }
