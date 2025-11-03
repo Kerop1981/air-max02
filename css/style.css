@@ -349,29 +349,18 @@
     align-items: center;
     padding: 50px 0 0 0;
 }
-.kross__container{
+.seller__container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 32px;
+    justify-content: center;
 
 }
 
-.table__kross2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0 0 0 ;
-}
 
 
-.kross__container2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
-}
 
 
 /* ================================= */
@@ -525,7 +514,10 @@
         font-size: 5vw;
     }
 
-     .text__img img{}
+     .text__img img{
+        width: 25vw;
+        height: 18vw;
+     }
 
     .text__img span {}
 
@@ -568,7 +560,10 @@
         font-size: 4vw;
     }
 
-     .text__img img{}
+     .text__img img{
+        width: 25vw;
+        height: 20vw;
+     }
 
     .text__img span {}
 
@@ -591,6 +586,21 @@
     .kross__container2{
         flex-direction: column;
     }
+
+    .footer__container{
+        flex-direction: column;
+    }
+
+.img__span1::before{
+display: none;
+}
+.img__span2::before{
+    display: none;
+}
+.img__span3::before{
+    display: none;
+}
+
 }
 
 /* До 450px */
